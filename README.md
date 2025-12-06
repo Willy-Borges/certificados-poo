@@ -131,22 +131,24 @@ _(Cole suas imagens aqui depois de subir para o GitHub)_
 ### ✔️ Tela — Página Inicial
 **Local para imagem:**
 
-![print-pagina-inicial](arquivos/prints/certificados-emitidos.png)
+![print-pagina-inicial](arquivos/prints/pagina-inicial.png)
 
 ---
 
-### ✔️ Tela — Seleção de Cursos
-![print-selecao-cursos](assets/prints/selecao-cursos.png)
+### ✔️ Tela — Cursos
+![print-selecao-cursos](arquivos/prints/cursos.png)
 
 ---
 
-### ✔️ Tela — Visualizar Certificado
-![print-visualizar](assets/prints/visualizar-certificado.png)
+### ✔️ Tela — Emitir Certificados
+![print-visualizar](assets/prints/arquivos/prints/emitir-certificado.png)
+
+![print-visualizar](assets/prints/arquivos/prints/emitir-certificado2.png)
 
 ---
 
 ### ✔️ Certificado Final (exemplo)
-![print-certificado](assets/prints/certificado-final.png)
+![print-certificado](arquivos/prints/certificado.png)
 
 ---
 
