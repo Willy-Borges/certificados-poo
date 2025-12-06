@@ -141,9 +141,9 @@ _(Cole suas imagens aqui depois de subir para o GitHub)_
 ---
 
 ### ✔️ Tela — Emitir Certificados
-![print-visualizar](assets/prints/arquivos/prints/emitir-certificado.png)
+![print-visualizar](rquivos/prints/emitir-certificado.png)
 
-![print-visualizar](assets/prints/arquivos/prints/emitir-certificado2.png)
+![print-visualizar](arquivos/prints/emitir-certificado2.png)
 
 ---
 
