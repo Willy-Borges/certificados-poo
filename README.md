@@ -40,92 +40,90 @@ Desenvolvido em **PHP Orientado a Objetos**, **MySQL**, **HTML/CSS/JS** e **GD**
 
 ## 📂 Estrutura do Projeto
 
-├── app/
-│   ├── Ajuda.php
-│   ├── CalculoCertificado.php
-│   ├── Sessao.php
-│   ├── Validador.php
-│
-├── arquivos/
-│   ├── css/
-│   │   ├── style.css
-│   ├── img/
-│   ├── js/
-│       ├── script.js
-│   ├── fonts
-│       ├── arial.ttf
-│
-├── config/
-│   ├── database.php
-│   ├── env.php
-│
-├── controles/
-│   ├── CertificadoControle.php
-│   ├── CursoControle.php
-│   ├── HomeControle.php
-│   ├── UsuarioControle.php
-│
-├── core/
-│   ├── Autoload.php
-│   ├── Controle.php
-│   ├── Database.php
-│   ├── Model.php
-│   ├── Roteador.php
-│
-├── modelos/
-│   ├── Certificado.php
-│   ├── Curso.php
-│   ├── Usuario.php
-│
-├── public/
-│   ├── .htaccess
-│   ├── index.php
-│
-├── rotas/
-│   ├── web.php
-│
-├── testes/
-│   ├── TesteCalculoTempo.php
-│   ├── TesteCertificados.php
-│   ├── TesteCursos.php
-│
-├── views/
-│   ├── certificados/
-│   │   ├── lista.php
-│   │   ├── certificado_png.php
-│   ├── componentes/
-│   │   ├── alertas.php
-│   │   ├── cabecalho.php
-│   │   ├── menu.php
-│   │   ├── rodape.php
-│   ├── cursos/
-│   │   ├── lista.php
-│   ├── emitir/
-│   │   ├── formulario.php
-│   ├── home/
-│   │   ├── index.php
-│   ├── layouts/
-│       ├── principal.php
+├── app/  
+│   ├── Ajuda.php  
+│   ├── CalculoCertificado.php  
+│   ├── Sessao.php  
+│   ├── Validador.php  
+│  
+├── arquivos/  
+│   ├── css/  
+│   │   ├── style.css  
+│   ├── img/  
+│   ├── js/  
+│       ├── script.js  
+│   ├── fonts  
+│       ├── arial.ttf  
+│  
+├── config/  
+│   ├── database.php  
+│   ├── env.php  
+│  
+├── controles/  
+│   ├── CertificadoControle.php  
+│   ├── CursoControle.php  
+│   ├── HomeControle.php  
+│   ├── UsuarioControle.php  
+│  
+├── core/  
+│   ├── Autoload.php  
+│   ├── Controle.php  
+│   ├── Database.php  
+│   ├── Model.php  
+│   ├── Roteador.php  
+│  
+├── modelos/  
+│   ├── Certificado.php  
+│   ├── Curso.php  
+│   ├── Usuario.php  
+│  
+├── public/  
+│   ├── .htaccess  
+│   ├── index.php  
+│  
+├── rotas/  
+│   ├── web.php  
+│  
+├── testes/  
+│   ├── TesteCalculoTempo.php  
+│   ├── TesteCertificados.php  
+│   ├── TesteCursos.php  
+│  
+├── views/  
+│   ├── certificados/  
+│   │   ├── lista.php  
+│   │   ├── certificado_png.php  
+│   ├── componentes/  
+│   │   ├── alertas.php  
+│   │   ├── cabecalho.php  
+│   │   ├── menu.php  
+│   │   ├── rodape.php  
+│   ├── cursos/  
+│   │   ├── lista.php  
+│   ├── emitir/  
+│   │   ├── formulario.php  
+│   ├── home/  
+│   │   ├── index.php  
+│   ├── layouts/  
+│       ├── principal.php  
 
 ## 🧮 Regras de Cálculo da Carga Horária
 
-1. O banco armazena data e hora completas.
-2. Cada dia possui limite de **10 horas**.
-3. Se dois cursos ocorrerem no mesmo dia:
-   - o sistema divide as horas conforme ordem de seleção.
-4. Horas já utilizadas em certificados anteriores são descontadas.
-5. Se o cálculo gerar menos que **2 horas**, a emissão é recusada.
-
-O arquivo PHP utiliza GD:
-
-- `imagettftext()` para escrever nome, curso, horas e datas
-- Fonte TTF personalizada
-- Texto branco ou preto configurável
-- Tamanho e posição ajustados manualmente
-- Exportação em JPG
-
----
-
+1. O banco armazena data e hora completas.  
+2. Cada dia possui limite de **10 horas**.  
+3. Se dois cursos ocorrerem no mesmo dia:  
+   - o sistema divide as horas conforme ordem de seleção.  
+4. Horas já utilizadas em certificados anteriores são descontadas.  
+5. Se o cálculo gerar menos que **2 horas**, a emissão é recusada.  
+  
+O arquivo PHP utiliza GD:  
+  
+- `imagettftext()` para escrever nome, curso, horas e datas  
+- Fonte TTF personalizada  
+- Texto branco ou preto configurável  
+- Tamanho e posição ajustados manualmente  
+- Exportação em JPG  
+  
 ## 📸 Prints das Telas
 
 _(Cole suas imagens aqui depois de subir para o GitHub)_
@@ -163,6 +161,7 @@ $host = 'localhost';
 $dbname = 'certificados';  
 $user = 'root';  
 $pass = '';
+\`\`\`
 
 ## Abra no navegador
 http://localhost/certificados-poo/
