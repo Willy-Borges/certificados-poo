@@ -131,7 +131,7 @@ _(Cole suas imagens aqui depois de subir para o GitHub)_
 ### ✔️ Tela — Página Inicial
 **Local para imagem:**
 
-![print-pagina-inicial](arquivos\prints\certificados-emitidos.png)
+![print-pagina-inicial](arquivos/prints/certificados-emitidos.png)
 
 ---
 
