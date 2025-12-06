@@ -166,11 +166,11 @@ $pass = '';
 ## Abra no navegador
 http://localhost/certificados-poo/
 
-##📜 Licença
+## 📜 Licença
 
 Este projeto está sob a licença MIT — livre para uso, cópia e modificação.
 
-##👨‍💻 Autor
+## 👨‍💻 Autor
 
 Willy Borges
 Projeto desenvolvido para estudos e uso prático com PHP + POO.
