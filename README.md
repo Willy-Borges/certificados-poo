@@ -161,7 +161,7 @@ $host = 'localhost';
 $dbname = 'certificados';  
 $user = 'root';  
 $pass = '';
-\`\`\`
+```
 
 ## Abra no navegador
 http://localhost/certificados-poo/
