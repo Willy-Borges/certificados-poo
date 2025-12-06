@@ -1,0 +1,784 @@
+/* //css/style.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/certificados-poo/arquivos/img/fundo.jpg');
+    background-size: 100% 160%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/* ===========================
+   ÁREA DO TOPO
+=========================== */
+.topo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.img-titulo { 
+    width: 500px; 
+}
+.img-titulo-cursos { 
+    width: 200px; 
+    height: auto; 
+}
+.img-titulo-certificados-emitidos { 
+    width: 600px;
+    height: auto; 
+}
+
+/* Relógio (versão global menor) */
+.icone-relogio {
+    width: 15px !important;
+    height: auto;
+    display: inline-block;
+}
+
+/* ===========================
+   MENUS
+=========================== */
+.menu-horizontal {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 430px;
+    gap: 0px;
+}
+
+.menu-horizontal a {
+    margin: 0 15px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   CONTEÚDO PRINCIPAL
+=========================== */
+.conteudo-principal {
+    background: #ffffffcc;
+    width: 1000px;
+    height: 500px;
+    margin: 5px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px #00000040;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*---------------*/
+.conteudo-principal-certificados {
+    background: #ffffffcc;
+    width: 1000px;
+    height: 500px;
+    margin: 5px auto;
+    padding: 30px;
+    padding-bottom: 70px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px #00000040;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*---------------*/
+.conteudo-principal img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home-sem-menu .conteudo-principal { margin-top: 60px; }
+.com-menu .conteudo-principal { margin-top: 5px; }
+
+/* ===========================
+   BOTÕES DA HOME
+=========================== */
+.botoes-home {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.botao-home {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0px 0px 8px #00000030;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    height: 120px;
+}
+
+.botao-home img {
+    width: 70px;
+    margin-right: 30px;
+}
+
+.botao-home:hover { background: #f1f1f1; }
+
+/* ===========================
+   LISTA DE CURSOS (MODELO LISTA)
+=========================== */
+.lista-cursos { width: 100%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.titulo-pagina {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.curso-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.curso-nome {
+    font-size: 22px !important;
+    font-weight: 600;
+    color: #222;
+}
+
+.minimo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+.texto-minimo {
+    font-weight: 700;
+    color: #0b5ed7;
+    font-size: 16px;
+}
+
+/* ===========================
+   RELÓGIO (VERSÃO MAIOR EM CARDS)
+=========================== */
+.carga {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.carga .icone-relogio {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 6px;
+}
+
+/* ===========================
+   GRID DE CURSOS (PÁGINA CURSOS)
+=========================== */
+.container-cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+    padding: 0;     
+    margin: 0;        
+    box-sizing: border-box;
+    margin-left: 7px;
+    margin: 7px;
+}
+
+.container-cursos-grid > :nth-child(4),
+.container-cursos-grid > :nth-child(5) {
+    grid-column: span 1;
+}
+
+.card-curso {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    width: 300px;
+}
+
+
+/* ===========================
+   IMAGENS DOS CURSOS
+=========================== */
+.img-curso {
+    width: 100%;
+    height: 160px; 
+    object-fit: cover;
+    display: block;
+}
+
+.card-curso img {
+    display: block !important;
+    width: 100% !important;
+    height: 150px !important;
+    object-fit: cover !important;
+    border-radius: 8px;
+    background: #ccc !important;
+}
+
+/* ===========================
+   INFO DOS CURSOS
+=========================== */
+.curso-info {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.curso-nome {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-curso h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-curso p {
+    font-size: 14px;
+    margin: 0;
+}
+@media (max-width: 900px) {
+    .container-cursos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .container-cursos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* tooltip horas*/
+.tooltip-horas {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.tooltip-horas .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7px 10px;
+    border-radius: 6px;
+    position: fixed;
+    z-index: 99999;
+    bottom: auto; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity .3s ease;
+    font-size: 12px;
+    white-space: normal;
+    top: 120%;
+    display: none;
+
+}
+
+.tooltip-horas:hover .tooltip-text {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    top: calc(var(--mouse-y) + 10px);
+    left: calc(var(--mouse-x) + 10px);
+}
+
+
+
+/*--------------------------------------*/
+/* ===========================
+   PÁGINA EMITIR CERTIFICADO
+=========================== */
+.emitir-form { 
+    width: 100%; 
+}
+
+.emitir-columns { 
+    gap: 0px;
+    width: 100%; 
+    margin-top: 6px; 
+    box-sizing: border-box; 
+    
+}
+
+
+.emitir-header {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+} 
+
+.titulo-coluna:first-child {
+    text-align: right;
+    padding-right: 300px;
+}
+
+.titulo-coluna { 
+    font-size: 50px; 
+    font-weight: 700; 
+    color: black; 
+    margin-bottom: 10px;
+
+}
+
+
+.emitir-list { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; }
+
+
+.linha-completa {
+    display: grid;
+    grid-template-columns: 1fr 470px;
+    align-items: center;
+    padding: 12px 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 40px;
+    background: white;
+    box-shadow: 0 0 4px rgba(0,0,0,0.03);
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+}
+
+
+.col-nome { 
+    padding-right: 8px;
+}
+.col-check { 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+}
+
+
+
+/* botão */
+.emitir-actions { 
+    margin-top: -40px; 
+    display:flex; 
+    justify-content:center; 
+
+}
+
+.btn-emitir { 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 0; 
+}
+.btn-emitir img { 
+    width: 180px; 
+    height: auto;
+    margin-top: 60px;
+    transition: 0.25s ease; 
+    cursor: pointer;
+}
+
+.btn-emitir img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.12);
+}
+
+/* responsivo */
+@media (max-width: 860px) {
+    .emitir-header { 
+        grid-template-columns: 1fr 70px; 
+}
+    .linha-completa { 
+        grid-template-columns: 1fr 50px;
+}
+    .btn-emitir img { 
+        width: 140px; 
+}
+
+.emitir-msg {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #0b7d15;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.emitir-msg.show {
+    opacity: 1;
+}
+
+}
+
+/* ===========================
+   PÁGINA CERTIFICADOA EMITIDOS
+=========================== */
+
+
+.emitir-certificados {
+  max-width: 1036px;
+  width: 1036px;
+  margin: 0 auto;
+  padding: 12px 18px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+.emitir-columns-cert {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.emitir-list-cert {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 0;
+  padding-left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: translateX(-18px);
+}
+
+/* ====== CHECKBOX ====== */
+.check-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.check-wrapper input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  inset: 0;  
+  z-index: 3;
+  
+}
+
+.fake-check {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #555;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-wrapper input:checked ~ .fake-check {
+  background: #eaeaea;
+  border-color: #222;
+}
+
+/* ====== HEADER ====== */
+.emitir-header-cert {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 0 110px;
+}
+
+.emitir-header-cert .titulo-coluna {
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1;
+}
+
+.emitir-header-cert .titulo-coluna:first-child {
+  text-align: left;  
+  margin-top: -8px;
+}
+
+.emitir-header-cert .titulo-coluna:last-child {
+  text-align: left;
+  margin-top: -8px;
+  margin-left: -30px;
+}
+
+/* ====== LINHAS ====== */
+.linha-completa-cert {
+  display: grid;
+  grid-template-columns: 1fr 470px;
+  align-items: center;
+  padding: 8px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 40px;
+  background: #ffffff;
+  box-shadow: 0 0 4px rgba(0,0,0,0.03);
+  font-weight: 700;
+  font-size: 32px;
+  color: black;
+  width: 100%;
+  box-sizing: border-box;
+  height: 63px !important;
+}
+
+/* nome */
+.col-nome-cert {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  padding-left: 12px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  height: 46px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* carga */
+.col-check-cert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-left: 20px;
+}
+
+.icone-relogio-emit {
+  width: 20px !important;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.linha-carga-cert {
+  width: 280px;
+  height: 2px;
+  background: rgba(0,0,0,0.28);
+  border-radius: 2px;
+  margin-top: 40px;
+}
+
+.linha-carga-text-cert{
+    width: 200px;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 2px;
+    margin-top: 18;
+
+}
+.linha-carga-cert[role="filled"] {
+  background: transparent;  
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: -50px;
+  margin-left: 4px;
+
+
+}
+
+/* linhas vazias */
+.linha-completa-cert.vazio {
+  display: none !important;
+}
+
+/* primeira linha placeholder */
+.linha-completa-cert.primeiro .icone-relogio-emit,
+.linha-completa-cert.primeiro .linha-carga-cert {
+  opacity: 1;
+}
+
+/* ====== BOTÃO LIMPAR ====== */
+.emitir-footer-cert {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;  
+  transform: translateX(-18px);
+  margin-bottom: -26px;
+}
+
+.btn-limpar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff4747;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.btn-limpar:hover {
+  background: #d93d3d;
+  transform: scale(1.04);
+}
+
+.btn-limpar:active {
+  transform: scale(0.96);
+}
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 900px) {
+  .emitir-header-cert {
+    grid-template-columns: 1fr 280px;
+  }
+
+  .linha-completa-cert {
+    grid-template-columns: 1fr 280px;
+    font-size: 28px;
+    padding: 0px 0px !important;
+  }
+
+  .col-nome-cert {
+    font-size: 28px;
+    height: 42px;
+  }
+
+  .linha-carga-cert {
+    width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .emitir-header-cert {
+    grid-template-columns: 1fr 180px;
+  }
+
+  .check-wrapper {
+    width: 30px;
+    height: 30px;
+  }
+
+  .check-wrapper .fake-check {
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
+  }
+
+  .linha-completa-cert {
+    display: grid !important;
+    grid-template-columns: 1fr 180px !important;
+    font-size: 22px !important;
+    padding: 8px 10px !important;
+  }
+
+  .col-nome-cert {
+    font-size: 20px;
+    height: 40px;
+  }
+
+  .linha-carga-cert {
+    width: 90px;
+  }
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000080;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 0 12px #00000040;
+}
+
+.popup-box button {
+  margin-top: 20px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #1466cc;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* =======================
+   BOTÃO IMPRIMIR – CERTIFICADOS EMITIDOS
+======================= */
+.btn-imprimir {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-imprimir img {
+    width: 38px;  
+    height: auto;
+    margin-left: 12px;
+    margin-top: 6px; 
+    transition: 0.25s ease;
+}
+
+.btn-imprimir img:hover {
+    transform: scale(1.10);
+    filter: brightness(1.12);
+}

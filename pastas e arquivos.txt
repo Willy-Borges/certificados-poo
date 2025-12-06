@@ -1,0 +1,80 @@
+├── app/
+│   ├── Ajuda.php
+│   ├── CalculoCertificado.php
+│   ├── Sessao.php
+│   ├── Validador.php
+│
+├── arquivos/
+│   ├── css/
+│   │   ├── style.css
+│   ├── img/
+│   ├── js/
+│       ├── script.js
+│   ├── fonts
+│       ├── arial.ttf
+│
+├── config/
+│   ├── database.php
+│   ├── env.php
+│
+├── controles/
+│   ├── CertificadoControle.php
+│   ├── CursoControle.php
+│   ├── HomeControle.php
+│   ├── UsuarioControle.php
+│
+├── core/
+│   ├── Autoload.php
+│   ├── Controle.php
+│   ├── Database.php
+│   ├── Model.php
+│   ├── Roteador.php
+│
+├── modelos/
+│   ├── Certificado.php
+│   ├── Curso.php
+│   ├── Usuario.php
+│
+├── public/
+│   ├── .htaccess
+│   ├── index.php
+│
+├── rotas/
+│   ├── web.php
+│
+├── testes/
+│   ├── TesteCalculoTempo.php
+│   ├── TesteCertificados.php
+│   ├── TesteCursos.php
+│
+├── views/
+│   ├── certificados/
+│   │   ├── lista.php
+│   │   ├── certificado_png.php
+│   ├── componentes/
+│   │   ├── alertas.php
+│   │   ├── cabecalho.php
+│   │   ├── menu.php
+│   │   ├── rodape.php
+│   ├── cursos/
+│   │   ├── lista.php
+│   ├── emitir/
+│   │   ├── formulario.php
+│   ├── home/
+│   │   ├── index.php
+│   ├── layouts/
+│       ├── principal.php
+
+----------------------------------------------------------------------------------
+BD
+Nomes das tabelas
+
+usuarios
+
+cursos
+
+matriculas
+
+certificados_emitidos
+
+log_horas_diarias
